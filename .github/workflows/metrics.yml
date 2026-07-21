@@ -1,13 +1,16 @@
 name: Metrics
+
 on:
   schedule: [{ cron: "0 0 * * *" }]
   workflow_dispatch:
   push: { branches: ["main", "master"] }
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -20,9 +23,16 @@ jobs:
           base_indepth: yes
           config_display: large
           config_animations: yes
-          # ISOMETRIC CALENDAR (the 3D green grid - already working great)
+
+          # ISOMETRIC CALENDAR (the 3D green grid - working great)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
+          # LINES OF CODE changed (nice stat, renders from own repo - never breaks)
+          plugin_lines: yes
+          plugin_lines_sections: base
+          plugin_lines_repositories_limit: 4
+
           # LANGUAGES - FIXED: now includes forked/private repos and raises timeout
           plugin_languages: yes
           plugin_languages_ignored: >-
@@ -40,6 +50,7 @@ jobs:
           plugin_languages_recent_days: 14
           plugin_languages_recent_load: 400
           plugin_languages_threshold: 0%
+
           # HABITS - FIXED: reduced load so it no longer times out / errors
           plugin_habits: yes
           plugin_habits_charts_type: classic
@@ -49,10 +60,12 @@ jobs:
           plugin_habits_from: 100
           plugin_habits_languages_limit: 6
           plugin_habits_languages_threshold: 0%
+
           # ACHIEVEMENTS
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_threshold: C
+
           # STARGAZERS
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
