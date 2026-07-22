@@ -1,14 +1,16 @@
 <div align="center">
-<!-- ===== TITLE (reliable text header instead of broken banner image) ===== -->
+
+<!-- ===== TITLE ===== -->
 
 # Hi, I'm Hamza Tariq 👋
 
-<!-- ===== TYPING ANIMATION (this server is reliable) ===== -->
+<!-- ===== TYPING ANIMATION ===== -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=800&color=58A6FF&center=true&vCenter=true&width=650&height=45&lines=Frontend+Developer+%F0%9F%92%BB;Next.js+%7C+React+%7C+TypeScript+%7C+Tailwind;Founder+%40+Devrex+Digital+%F0%9F%9A%80;Turning+ideas+into+fast+web+apps+%E2%9C%A8" alt="Typing SVG" />
 
 <br/><br/>
 
-<!-- ===== SOCIAL BADGES (shields.io is very reliable) ===== -->
+<!-- ===== SOCIAL BADGES ===== -->
+
 <a href="https://hamzatariq.site"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=58A6FF" /></a>
 <a href="https://www.instagram.com/hamzapulse.dev/"><img src="https://img.shields.io/badge/Instagram-0D1117?style=for-the-badge&logo=instagram&logoColor=E4405F" /></a>
 <a href="https://www.facebook.com/humza.tariq.372/"><img src="https://img.shields.io/badge/Facebook-0D1117?style=for-the-badge&logo=facebook&logoColor=1877F2" /></a>
@@ -18,6 +20,7 @@
 <br/>
 
 <!-- ===== ABOUT ME ===== -->
+
 ### 👨‍💻 About Me
 
 <img align="right" width="280" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coding gif" />
@@ -33,16 +36,19 @@
 <br clear="right"/>
 <br/>
 
-<!-- ===== TECH STACK (shields.io - reliable, laid out horizontally) ===== -->
+<!-- ===== TECH STACK ===== -->
+
 ### 🛠️ Tech Stack
 
-**Frontend**
-
-**Backend & Tools**
-
+<div align="center">
+<img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css&theme=dark" />
+<br/>
+<img src="https://skillicons.dev/icons?i=supabase,nodejs,git,github,vercel,vscode&theme=dark" />
+</div>
 <br/>
 
-<!-- ===== CONTRIBUTION GRAPH (this worked perfectly - keep it) ===== -->
+<!-- ===== CONTRIBUTION GRAPH ===== -->
+
 ### 📈 Contribution Graph
 
 <div align="center">
@@ -50,7 +56,8 @@
 </div>
 <br/>
 
-<!-- ===== DETAILED METRICS (from your own repo - always works) ===== -->
+<!-- ===== DETAILED METRICS ===== -->
+
 ### 📌 Detailed Metrics
 
 <div align="center">
