@@ -20,19 +20,16 @@ jobs:
           base_indepth: yes
           config_display: large
           config_animations: yes
-          # RELIABILITY: retry on transient errors, tolerate minor mismatches
+          # RELIABILITY - a failing plugin will not break the whole image
           retries: 3
           retries_delay: 300
-          retries_output_action: 3
           plugins_errors_fatal: no
-          # ISOMETRIC CALENDAR (the 3D green grid - working great)
+
+          # 3D ISOMETRIC CALENDAR (the green cube tower you want)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          # LINES OF CODE changed (nice stat, renders from own repo - never breaks)
-          plugin_lines: yes
-          plugin_lines_sections: base
-          plugin_lines_repositories_limit: 4
-          # LANGUAGES - FIXED: now includes forked/private repos and raises timeout
+
+          # LANGUAGES
           plugin_languages: yes
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
@@ -42,25 +39,16 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_limit: 8
           plugin_languages_analysis_timeout: 30
-          plugin_languages_analysis_timeout_repositories: 15
-          plugin_languages_categories: markup, programming
           plugin_languages_colors: github
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 400
-          plugin_languages_threshold: 0%
-          # HABITS - FIXED: reduced load so it no longer times out / errors
+
+          # HABITS
           plugin_habits: yes
           plugin_habits_charts_type: classic
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: no
           plugin_habits_from: 100
-          plugin_habits_languages_limit: 6
-          plugin_habits_languages_threshold: 0%
-          # ACHIEVEMENTS - REMOVED: depends on deprecated GitHub Projects Classic
-          # API which GitHub shut down, causing the whole render to fail.
-          plugin_achievements: no
+
           # STARGAZERS
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
